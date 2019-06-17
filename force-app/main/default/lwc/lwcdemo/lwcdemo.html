@@ -1,0 +1,23 @@
+<!--
+  @Component Name     : lwcdemo.html
+  @Description        : 
+  @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Group              : 
+  @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Last Modified On   : 6/15/2019, 10:29:07 PM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    6/15/2019, 12:31:04 AM   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
+-->
+<template>
+    <h1>Hello My LWC Library : {recordId}</h1>
+    <br/>
+    <c-datatablecombobox
+      key-field="id"
+      data={data}
+      columns={columns}
+      onhandletbcchange={handlechange}
+      hide-checkbox-column> </c-datatablecombobox>
+</template>

@@ -1,0 +1,30 @@
+<!--
+  @Component Name     : tbcombobox.html
+  @Description        : 
+  @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Group              : 
+  @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Last Modified On   : 6/16/2019, 12:36:27 AM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    6/15/2019, 11:52:07 AM   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
+-->
+<template>
+    <div style="width: 50%;padding-top: 5px;padding-bottom: 5px;">
+        <!--<lightning-combobox class="tbcombobox"
+                label={label} 
+                placeholder={placeholder} 
+                options={options}
+                value = {value}
+                onchange={handlechange}>
+        </lightning-combobox>-->
+        <select class="slds-input" onchange={handlechange}>
+            <option value=''>{placeholder}</option>
+            <template for:each={options} for:item='item'>
+                <option key={item.value} value={item.value}>{item.label}</option>
+            </template>
+        </select>
+    </div>
+</template>
